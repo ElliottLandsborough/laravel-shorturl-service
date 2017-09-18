@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as' => 'home', 'uses' => 'UrlController@home']);
+
+Route::post('shorten', 'UrlController@getUrl');
+
+Route::get('{token}', 'UrlController@forward')->where('token', '[0-9A-Za-z]+');
