@@ -14,7 +14,8 @@ class CreateUrlTable extends Migration
             $table->bigIncrements('id');
             $table->text('url');
             $table->text('ip');
-            $table->integer('redirects');
+            $table->integer('redirects')->default(0);
+            $table->text('notes')->nullable();
             $table->timestamps();
         });
     }
