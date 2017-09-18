@@ -10,3 +10,4 @@ For http://el.lc
  - composer update
  - set db details in .env file or in db config
  - php artisan migrate
+ - npm run production
