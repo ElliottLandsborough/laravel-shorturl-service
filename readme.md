@@ -11,3 +11,8 @@ For http://el.lc
  - set db details in .env file or in db config
  - php artisan migrate
  - npm run production
+
+## Todo
+ - properly randomize strings
+ - remove jquery dep (embarassed.jpg)
+ - better theme...
